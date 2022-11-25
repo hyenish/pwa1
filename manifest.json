@@ -1,0 +1,54 @@
+{
+	"name": "autumn talk",
+	"short_name": "autumn talk",
+	"description": "PWA 연습용 페이지입니다. 가을을 컨셉으로 한 SNS App입니다.",
+	"background_color": "#ffffff",
+	"theme_color": "#ffffff",
+	"dir": "auto",
+	"lang": "ko",
+	"display": "standalone",
+	"orientation": "any",
+	"scope": "/",
+	"start_url": "/",
+	"gcm_sender_id": "",
+	"gcm_user_visible_only": true,
+	"categories": [],
+	"screenshots": [
+		{
+			"src": "images/screenshot1.png",
+			"sizes": "388x843",
+			"type": "image/png"
+		},
+		{
+			"src": "images/screenshot2.png",
+			"sizes": "391x843",
+			"type": "image/png"
+		},
+		{
+			"src": "images/screenshot3.png",
+			"sizes": "390x846",
+			"type": "image/png"
+		}
+	],
+	"icons": [
+		{
+			"src": "images/maskable_icon_x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "images/maskable_icon_x128.png",
+			"sizes": "128x128",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "images/maskable_icon_x48.png",
+			"sizes": "48x48",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"shortcuts": []
+}

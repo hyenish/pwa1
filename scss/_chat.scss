@@ -1,0 +1,78 @@
+.chat {
+  @include set-box(100%);
+}
+.chat_screen {
+  height: calc(100% - 140px);
+  overflow: auto;
+  background-color: $bg-color;
+
+  .chat_screen_bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .chat_nick { 
+      font-size:1em;
+    }
+  }
+}
+
+.chat_user {
+  background-color: $bg-color;
+  box-shadow: .5px .5px 1px $opacityBlack;
+}
+
+.bubble_container {
+  padding-top: 20px;
+}
+
+.bubble_wrap { 
+  display: flex;
+
+  .bubble_content {  
+    width: 80%;
+    max-width: 700px;
+  }
+  .bubble_time {
+    display: flex;
+    min-width: 60px;
+    align-items: self-end;
+    padding: 0 6px 0;
+    font-size: 0.7em;
+  }
+}
+
+.chat_form { 
+  background-color: $white;
+  height:140px;
+  padding: 10px;
+
+  .chat_form_msg {
+    @include set-box(75px,100%);
+    resize: none;
+    border: none;
+    outline: none;  //포커스 됐을 때 보이는 라인
+    margin-bottom: 8px;
+  }
+  .chat_form_util { 
+    display: flex;
+    justify-content: space-between;
+
+    .chat_form_util_plugin {
+      i {
+        margin-right: 10px;
+        color: $gray1;
+        line-height: 35px //전송btn의 높이값
+      }
+    }
+    .chat_form_util_submit {
+
+      .chat_form_btn {
+        @include set-box(35px, 70px, 6px);
+        border: none;
+        color: $white;
+        background-color: $bg-color;
+      }
+    }
+  }
+}
