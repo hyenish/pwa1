@@ -17,7 +17,7 @@
 			if ("serviceWorker" in navigator) {
 				//서비스 워커가 있을 때(서비스워커 지원여부)
 				navigator.serviceWorker
-					.register("sw.js")
+					.register("service-worker.js")
 					.then(function (success) {
 						console.log("serviceWorker 설치에 성공했습니다!", success);
 					})
